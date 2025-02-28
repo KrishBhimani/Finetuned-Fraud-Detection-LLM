@@ -12,7 +12,7 @@ model_id = os.getenv('MODEL_ID')
 
 lamini_client = Lamini(api_key=lamini_api_key, model_name=model_id)
 
-groq_llm = ChatGroq(model_name="deepseek-r1-distill-qwen-32b")
+groq_llm = ChatGroq(model_name="qwen-2.5-32b")
 
 # Function to get fraud prediction from Lamini
 def query_model(prompt):
